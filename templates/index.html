@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> -->
+    <title>Hello, world!</title> 
+
+    <style tepe="text/css"> 
+
+        #centered{  
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        #font{
+            font-family: 'Pacifico', cursive;
+            }
+            
+        #container {  
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            font-size: 20px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            }
+
+           
+      
+    </style>
+
+
+
+  </head>
+  <body >
+        <div class="container" style="background-image: url('./static/image/backgund.jpg');" id="centered">
+            <div class="card"  style="width: 80rem; height: 40rem;">
+                <br>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start" id="font">&nbsp;&nbsp;
+                    <button class="btn btn-primary me-md-2" type="button">
+                        ADD
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
+                            <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                          </svg>
+                    </button>
+                  </div>
+                <div class="card-body">
+                    <div class="card" style="width: 18rem;">  
+                        <div class="d-flex justify-content-sm-start">
+                        </div>
+                        <div class="btn btn-rounded" id="container">
+                            <label class="form-label text-white m-1" for="customFile1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-images" viewBox="0 0 16 16">
+                                    <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                    <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z"/>
+                                </svg>
+                            </label>
+                            <input type="file" class="form-control d-none" id="customFile1" />
+                        </div>
+                        <img src="./static/image/backgund.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title"></h5>
+                          <div class="mb-3" id="font">
+                            <label for="exampleFormControlInput1" class="form-label">Name Stroy</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1">
+                          </div>
+                          <div class="mb-3" id="font">
+                            <label for="exampleFormControlTextarea1" class="form-label">Stroy</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
+                         
+                        </div>
+                      </div>
+                </div>
+              </div>
+        </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
